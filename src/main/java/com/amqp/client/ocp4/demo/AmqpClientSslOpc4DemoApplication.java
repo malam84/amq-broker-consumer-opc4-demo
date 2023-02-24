@@ -15,7 +15,7 @@ public class AmqpClientSslOpc4DemoApplication{
 
 	@JmsListener(destination = "TEST")
 	public void receiveMessage(String text) throws InterruptedException {
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		System.out.println(String.format("Received '%s'", text));
 	}
 
