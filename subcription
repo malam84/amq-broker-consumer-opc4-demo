@@ -1,0 +1,79 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  creationTimestamp: "2023-04-04T05:04:01Z"
+  generation: 1
+  labels:
+    operators.coreos.com/grafana-operator.my-grafana-operator: ""
+  name: grafana-operator
+  namespace: my-grafana-operator
+  resourceVersion: "7607302"
+  uid: 8bef9eac-5031-40ed-b630-55153c73ebf8
+spec:
+  channel: v4
+  installPlanApproval: Automatic
+  name: grafana-operator
+  source: community-operators
+  sourceNamespace: openshift-marketplace
+  startingCSV: grafana-operator.v4.10.0
+status:
+  catalogHealth:
+  - catalogSourceRef:
+      apiVersion: operators.coreos.com/v1alpha1
+      kind: CatalogSource
+      name: certified-operators
+      namespace: openshift-marketplace
+      resourceVersion: "7603380"
+      uid: 0fa05f78-4673-407c-824a-36e4fc7b0009
+    healthy: true
+    lastUpdated: "2023-04-04T05:04:02Z"
+  - catalogSourceRef:
+      apiVersion: operators.coreos.com/v1alpha1
+      kind: CatalogSource
+      name: community-operators
+      namespace: openshift-marketplace
+      resourceVersion: "7603373"
+      uid: 941c1243-a54c-4d0d-88e1-fdd15e37c15a
+    healthy: true
+    lastUpdated: "2023-04-04T05:04:02Z"
+  - catalogSourceRef:
+      apiVersion: operators.coreos.com/v1alpha1
+      kind: CatalogSource
+      name: redhat-marketplace
+      namespace: openshift-marketplace
+      resourceVersion: "7603375"
+      uid: 9d6ececc-f068-4d7f-9e65-f4c57136f873
+    healthy: true
+    lastUpdated: "2023-04-04T05:04:02Z"
+  - catalogSourceRef:
+      apiVersion: operators.coreos.com/v1alpha1
+      kind: CatalogSource
+      name: redhat-operators
+      namespace: openshift-marketplace
+      resourceVersion: "7603378"
+      uid: 085badb5-b8b4-4cbb-815a-c17666be5f04
+    healthy: true
+    lastUpdated: "2023-04-04T05:04:02Z"
+  conditions:
+  - lastTransitionTime: "2023-04-04T05:04:02Z"
+    message: all available catalogsources are healthy
+    reason: AllCatalogSourcesHealthy
+    status: "False"
+    type: CatalogSourcesUnhealthy
+  currentCSV: grafana-operator.v4.10.0
+  installPlanGeneration: 1
+  installPlanRef:
+    apiVersion: operators.coreos.com/v1alpha1
+    kind: InstallPlan
+    name: install-dxjmh
+    namespace: my-grafana-operator
+    resourceVersion: "7607131"
+    uid: 548bd0fe-d432-4b64-8873-02a8ee3afd0d
+  installedCSV: grafana-operator.v4.10.0
+  installplan:
+    apiVersion: operators.coreos.com/v1alpha1
+    kind: InstallPlan
+    name: install-dxjmh
+    uuid: 548bd0fe-d432-4b64-8873-02a8ee3afd0d
+  lastUpdated: "2023-04-04T05:04:07Z"
+  state: AtLatestKnown
